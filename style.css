@@ -1,0 +1,89 @@
+.fondo {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(115, 8, 130, 1) 52%,
+        rgba(9, 9, 121, 1) 52%,
+        rgba(137, 8, 132, 0.9920343137254902) 52%,
+        rgba(0, 15, 218, 1) 100%
+    );
+}
+
+.piano {
+    display: flex;
+    margin-top: 200px;
+    align-self: center;
+    justify-content: center;
+}
+
+.tecla {
+    justify-content: center;
+}
+.blancas {
+    background-color: #faf9f9;
+    height: 10rem;
+    width: 4.5rem;
+    color: rgb(2, 0, 36);
+}
+.tecla_negras {
+    color: aliceblue;
+
+    height: 6.5rem;
+    width: 2.5 rem;
+    z-index: 3;
+}
+.KEYSC1 {
+    color: white;
+    background-color: black;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 57%;
+    left: 42.1rem;
+}
+.KEYSA {
+    color: aliceblue;
+    background-color: black;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 57%;
+    left: 64.5rem;
+}
+.KEYSF {
+    color: aliceblue;
+    background-color: black;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 57%;
+    left: 55.3rem;
+}
+.KEYSD {
+    color: aliceblue;
+    background-color: black;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 57%;
+    left: 46.5rem;
+}
+.KEYSC {
+    color: aliceblue;
+    background-color: black;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 57%;
+    left: 73.5rem;
+}
+.KEYSG {
+    color: aliceblue;
+    background-color: black;
+    height: 5.5rem;
+    z-index: 1;
+    position: absolute;
+    bottom: 57%;
+    left: 60.1rem;
+}
