@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="/pianito/style.css" />
+        <link rel="icon" href="/pianito/downloads/descarga.ico" type="image/x-icon">
+        <title>Pianito</title>
+    </head>
+    <body class="fondo">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ROOTS
+        </button>
+        <ul class="dropdown-menu">
+          <li class="lookscolors"><a class="dropdown-item" href="#">C</a></li>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">C#</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">D</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">D#</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">E</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">F</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">F#</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">G</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">G#</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">A</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">A#</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">B</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">C#</a></liclass=>
+          <li></li>
+          <liclass="lookscolors"><a class="dropdown-item" href="#">C2</a></liclass=>
+          <li></li>
+      </div>
+               
+
+                <div class="dropdown">
+                    <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="">
+                        scale
+            </button>
+            <ul class="dropdown-menu">
+                
+                <liclass="lookscolors"><a class="dropdown-item" href="#">Escale major</a></liclass=>
+                <li></li>
+                <liclass="lookscolors"><a class="dropdown-item" href="#">Escale menor</a></liclass=>
+                <li></li>
+            </ul>
+        </div>
+        <div class="sin-ing">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    inisio de sesion
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        recordar
+                      </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">corfirmacion </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="piano">
+            <button class="tecla blancas" id="KeyC" onclick="SoundC()" >C</button>
+            <button class="tecla blancas" >D</button>
+            <button class="tecla blancas">E</button>
+            <button class="tecla blancas">F</button>
+            <button class="tecla blancas">G</button>
+            <button class="tecla blancas">A</button>
+            <button class="tecla blancas">B</button>
+            <button class="tecla blancas">C</button>
+            <div class="piano2">
+                <button class="tecla_C" class="negras">C#</button>
+                <button class="tecla_D" class="negras">D#</button>
+                <button class="tecla_F"class="negras">F#</button>
+                <button class="tecla_G"class="negras">G#</button>
+                <button class="tecla_A"class="negras">A#</button>
+                <button class="tecla_C2"class="negras">C#</button>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+            <script src="/pianito/script.js", scr="/pianito/animations/animation.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.min.js"></script>
+  
+           
+            <script>
+                // Ruta del archivo MP3
+                const rutaSonidoMP3 = "/pianito/downloads/sound/CPiano.mp3"; // Reemplaza con la ruta correcta del archivo MP3
+            
+                // Cargar el archivo MP3 con Tone.Player
+                const reproductor = new Tone.Player(rutaSonidoMP3).toDestination();
+            
+                // Función para reproducir el sonido MP3
+                function SoundC() {
+                  // Reproducir el sonido
+                  reproductor.start();
+                }
+              </script>
+
+        </body>
+</html>

@@ -1,0 +1,59 @@
+{ <script>
+    // Ruta del archivo MP3
+    const rutaSonidoMP3 = "ruta/al/archivo.mp3"; // Reemplaza con la ruta correcta del archivo MP3
+
+    // Cargar el archivo MP3 con Tone.Player
+    const reproductor = new Tone.Player(rutaSonidoMP3).toDestination();
+
+    // Función para reproducir el sonido MP3
+    function reproducirSonidoMP3() {
+      // Reproducir el sonido
+      reproductor.start();
+    }
+  </script>
+
+  <!-- Botón para reproducir el sonido MP3 -->
+  <button id="KeyC" onclick="reproducirSonidoMP3()">Reproducir Sonido MP3</button>
+(codgo completo de la musica por chat gpt)} 
+
+otro codigo seria( utilizando areblos para comvocar las musicas){
+<!-- Incluir Tone.js mediante una CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.min.js"></script>
+
+  <script>
+    // Definir las frecuencias para las notas musicales C, D, E, F, G, A, B y C
+    const frecuencias = {
+      C: 261.63,
+      D: 293.66,
+      E: 329.63,
+      F: 349.23,
+      G: 392.00,
+      A: 440.00,
+      B: 493.88
+    };
+
+    // Función para reproducir una nota musical
+    function reproducirNota(nota) {
+      // Verificar si la nota existe en el objeto de frecuencias
+      if (frecuencias.hasOwnProperty(nota)) {
+        // Crear un oscilador con la frecuencia correspondiente y reproducirlo durante 1 segundo
+        const oscilador = new Tone.Oscillator(frecuencias[nota], "sine").toDestination();
+        oscilador.start().stop("+1");
+      }
+    }
+  </script>
+
+  <!-- Botones para reproducir las notas musicales -->
+  <button onclick="reproducirNota('C')">C</button>
+  <button onclick="reproducirNota('D')">D</button>
+  <button onclick="reproducirNota('E')">E</button>
+  <button onclick="reproducirNota('F')">F</button>
+  <button onclick="reproducirNota('G')">G</button>
+  <button onclick="reproducirNota('A')">A</button>
+  <button onclick="reproducirNota('B')">B</button>
+  <button onclick="reproducirNota('C')">C</button>
+
+</body>
+</html>
+
+}

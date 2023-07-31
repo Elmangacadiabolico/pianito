@@ -1,0 +1,26 @@
+qeu hace este codigo cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Nueva clase para el efecto de brillo */
+button.brillar {
+    animation: brillarEffect 1s
+    
+ChatGPT
+Este código es parte del CSS que hemos utilizado previamente para crear un botón que brilla cuando se le hace hover o clic. Veamos qué hace cada parte del código:
+
+cursor: pointer;: Esta propiedad CSS se aplica al elemento button y establece el cursor del ratón como una "manita" cuando el puntero está sobre el botón. Esto indica visualmente que el botón es interactivo y se puede hacer clic.
+
+transition: background-color 0.3s ease;: Aquí, estamos aplicando una transición suave (efecto de animación) al color de fondo del botón cuando hay cambios en el estado. En este caso, cuando el botón pasa de su estado normal a su estado hover, la transición suave dura 0.3 segundos (300 milisegundos) y utiliza una función de temporización "ease" que acelera y desacelera la animación de manera suave.
+
+button:hover: Esta regla se aplica cuando el cursor del ratón se encuentra sobre el botón, es decir, cuando se le hace hover. Cuando eso sucede, el color de fondo del botón cambia a #2980b9, que es un tono de azul.
+
+button.brillar: Esta regla se aplica cuando se agrega la clase brillar al botón (por ejemplo, a través de JavaScript). Esta clase se usa para aplicar el efecto de brillo usando animaciones CSS.
+
+animation: brillarEffect 1s;: Aquí, estamos aplicando una animación CSS llamada brillarEffect al botón. La animación tiene una duración de 1 segundo (1s). La animación brillarEffect debe estar definida en otra parte del archivo CSS o en un archivo separado.
+
+En resumen, este código CSS se utiliza para crear un botón interactivo que cambia de color suavemente al pasar el cursor sobre él (hover) y también tiene un efecto de brillo cuando se le aplica la clase brillar. La animación de brillo se activa mediante JavaScript al hacer clic en el botón.

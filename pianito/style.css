@@ -1,0 +1,157 @@
+
+.fondo {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(
+        circle,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(115, 8, 130, 1) 52%,
+        rgba(9, 9, 121, 1) 52%,
+        rgba(137, 8, 132, 0.9920343137254902) 52%,
+        rgba(0, 15, 218, 1) 100%
+    );
+}
+
+.piano {
+    display: flex;
+    margin-top: 200px;
+    align-self: center;
+    justify-content: center;
+}
+
+.tecla {
+    justify-content: center;
+}
+.tecla_C {
+    display: flex;
+    color: aliceblue;
+    background-color: black;
+    height: 20rem;
+    width: 2.5rem;
+    position:relative;
+    z-index:2;
+    cursor: pointer;
+    transition: background-color 0.10s ease;
+    top: -5px;
+    left: -1139px;
+    z-index:3;
+}
+
+    
+    .tecla_D{
+        color: aliceblue;
+        background-color: black;
+        height: 20rem;
+        width: 2.5rem;
+        position:relative;
+        z-index:2;
+        cursor: pointer;
+        transition: background-color 0.10s ease;
+        top:-325px;
+        left: -980px;
+        z-index:3;
+    }
+
+            .tecla_F{
+        color: aliceblue;
+        background-color: black;
+        height: 20rem;
+        width: 2.5rem;
+        position:relative;
+        z-index:2;
+        cursor: pointer;
+        transition: background-color 0.10s ease;
+        top: -325px;
+        left: -700px;
+        z-index:3;
+    }
+    .tecla_G{
+        color: aliceblue;
+    background-color: black;
+    height: 20rem;
+    width: 2.5rem;
+    position:relative;
+    z-index:2;
+    cursor: pointer;
+    transition: background-color 0.10s ease;
+    top:-325px;
+        left: -575px;
+        z-index:3;
+    }
+    .tecla_A{
+        color: aliceblue;
+        background-color: black;
+        height: 20rem;
+        width: 2.5rem;
+        position:relative;
+        z-index:2;
+        cursor: pointer;
+        transition: background-color 0.10s ease;
+        top: -325px;
+        left: -455px;
+        z-index:3;
+    }
+    .tecla_C2{
+        color: aliceblue;
+    background-color: black;
+    height: 20rem;
+    width: 2.5rem;
+    position:relative;
+    z-index:2;
+    cursor: pointer;
+    transition: background-color 0.10s ease;
+    top: -325px;
+    left:-355px ;
+    }
+
+.blancas {
+    background-color: #faf9f9;
+    height: 30rem;
+    width: 10rem;
+    color: rgb(2, 0, 36);
+    cursor: pointer;
+    transition: background-color 0.10s ease;
+    
+}
+
+.blancas:hover {
+    background-color: burlywood;
+    color:#faf9f9
+}
+
+.tecla_D:hover {
+    background-color: burlywood;
+    color:#faf9f9
+}
+
+.tecla_C:hover {
+    background-color: burlywood;
+    color:#faf9f9
+}
+.tecla_F:hover {
+    background-color: burlywood;
+    color:#faf9f9
+}
+.tecla_G:hover {
+    background-color: burlywood;
+    color:#faf9f9
+}
+.tecla_A:hover {
+    background-color: #deb887;
+    color:#faf9f9
+}
+.tecla_C2:hover {
+    background-color: #deb887;
+    color:#faf9f9
+}
+
+.btnbtn-secondarydropdown-toggle{
+
+    color:#44D6B9;
+}
+
+.custom-dropdown{
+    position: absolute;
+
+    left: 80%
+    
+}

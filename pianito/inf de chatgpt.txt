@@ -1,0 +1,96 @@
+el codigo original de la animacion fue sacada de chat gpt
+el original es asi : {(el css) 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+}
+y por tarte de scrip es : {(js)const button = document.getElementById('brillar-btn');
+
+button.addEventListener('click', () => {
+    button.classList.add('brillar');
+    
+    // Eliminar la clase de brillo después de 500ms para volver al estado original
+    setTimeout(() => {
+        button.classList.remove('brillar');
+    }, 500);
+});
+}
+
+
+Posiciones : 
+
+position:
+
+static: Es el valor predeterminado. El elemento se coloca en el flujo normal del documento y no se ve afectado por las propiedades de posicionamiento.
+relative: El elemento se posiciona de forma relativa a su posición normal. Puedes usar las propiedades top, right, bottom y left para desplazarlo desde su posición original.
+absolute: El elemento se posiciona de forma absoluta con respecto a su primer ancestro posicionado. Si no tiene un ancestro posicionado, se posiciona con respecto al cuerpo del documento. También puedes usar las propiedades top, right, bottom y left para especificar su posición exacta.
+fixed: El elemento se posiciona de forma absoluta con respecto a la ventana del navegador. Permanecerá en la misma posición incluso si la página se desplaza.
+top, right, bottom, left:
+Estas propiedades se usan junto con las propiedades position: relative o position: absolute para especificar cuánto se desplaza el elemento desde su posición normal. Puedes usar valores en píxeles, porcentajes o incluso valores negativos para ajustar su posición.
+
+z-index:
+Esta propiedad se utiliza para controlar el orden de apilamiento de los elementos posicionados. Los elementos con un valor de z-index mayor se mostrarán sobre los elementos con un valor de z-index menor.
+
+float:
+Esta propiedad se utiliza para sacar un elemento del flujo normal y permitir que otros elementos fluyan alrededor de él. Es útil para crear diseños de varias columnas.
+
+clear:
+Esta propiedad se utiliza para evitar que los elementos fluyan alrededor de un elemento flotante. Puedes usar clear: left, clear: right, clear: both, o clear: none para especificar cómo los elementos deben comportarse en relación con los elementos flotantes.
+
+
+el codigo fue encontrado en https://chat.openai.com/c/ab3a7acc-ff13-4658-9341-9f1cda23a872
+
+
+para modificar algo de bootstrap tenemos que crear una clase personalizada, al lado de la clase por defecto del bootstrap
+
+
+
+
+
+codigo que tiene qeu estar en el html para la reproducir un sonido:
+
+ <script>
+                // Función para reproducir un sonido aleatorio con Tone.js
+                function reproducirSonidoAleatorio() {
+                  // Lista de frecuencias para los sonidos posibles
+                  const frecuencias = [220, 330, 440, 550, 660, 770];
+            
+                  // Obtener una frecuencia aleatoria de la lista
+                  const frecuenciaAleatoria = frecuencias[Math.floor(Math.random() * frecuencias.length)];
+            
+                  // Crear un oscilador con la frecuencia aleatoria y una forma de onda aleatoria
+                  const oscilador = new Tone.Oscillator(frecuenciaAleatoria, getRandomWaveform()).toDestination();
+            
+                  // Iniciar y detener el oscilador después de un breve período de tiempo
+                  oscilador.start();
+                  setTimeout(() => {
+                    oscilador.stop();
+                  }, 500);
+                }
+            
+                // Función para obtener una forma de onda aleatoria
+                function getRandomWaveform() {
+                  const formasDeOnda = ["sine", "square", "triangle", "sawtooth"];
+                  return formasDeOnda[Math.floor(Math.random() * formasDeOnda.length)];
+                }
+              </script>
